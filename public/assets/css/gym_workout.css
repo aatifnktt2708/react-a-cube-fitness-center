@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Laptop and 4k */
+@media only screen and (max-width: 2560px){
+    #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+    margin: 10px 35px;
+}
+
+#logo img {
+    height: 100px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    font-family: "Baloo Bhai 2", sans-serif;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* workout section */
+.workout-container{
+    width: 100%;
+    background-image: url('/resources/bg2.avif');
+
+}
+.workout-container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../resources/bg.png') no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#muscles {
+    margin: 0px 34px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#muscles .box {
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 35px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    background: rgb(0, 0, 0);
+}
+
+#muscles .box:hover {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 35px;
+    margin: 3px 6px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#muscles .box img {
+    height: 250px;
+    margin: auto;
+    display: block;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+#muscles .box img:hover {
+    margin: auto;
+    display: block;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#muscles .box p {
+    font-family: "Bree Serif", serif;
+    text-align: justify;
+}
+
+/* Footer Section */
+footer{
+    width: 100%;
+
+}
+.footer {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    height: 500px;
+    padding-top: 100px;
+}
+
+.oth {
+    font-size: 30px;
+}
+
+.links a {
+    font-family: "Bree Serif", serif;
+    color: white;
+    display: block;
+    padding: 5px 60px;
+    text-decoration: none;
+}
+
+
+.form-row {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.form-row>input {
+    color: gray;
+    flex: 1;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 20px;
+    font-family: "Bree Serif", serif;
+    font-size: 16px;
+}
+
+.form-row>textarea {
+    color: gray;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 20px;
+    font-family: "Bree Serif", serif;
+    font-size: 16px;
+    width: 400px;
+    padding: 15px;
+}
+
+.form-row>input,
+.form-row>button {
+    padding: 15px;
+}
+
+.form-row>button {
+    background: red;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 400px;
+    font-family: "Bree Serif", serif;
+    font-size: 17px;
+
+}
+
+.copyright {
+    font-family: "Bree Serif", serif;
+    font-size: 17px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 50px;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+
+.heading{
+    font-size: 30px;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+.h-secondary {
+    font-size: 25px;
+    padding: 12px;
+    font-family: "Bree Serif", serif;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    outline: 0;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 20px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+}
+@media only screen and (max-width: 1024px){
+    /* Navigation Bar */
+    #navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #muscles {
+        margin: 0px 34px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    /* Footer Section */
+    .form-row>textarea {
+        width: 300px;
+    }
+
+    .form-row>button {
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    #navbar {
+        justify-content: space-between;
+    }
+
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #home {
+        height: 68vh;
+    }
+    #muscles{
+        margin: 0px 15px;
+        flex-wrap: wrap;
+    }
+    #muscles .box{
+        flex: 1 100px;
+    }
+    #muscles .box img {
+        height: 100px;
+    }
+/* Footer Section */
+    .footer {
+        flex-direction: column;
+    }
+
+    .form-row>textarea {
+        width: 300px;
+    }
+
+    .form-row>button {
+        width: 300px;
+    }
+
+    .footer {
+        height: 100%;
+        padding-top: 50px;
+    }
+
+    .copyright {
+        bottom: 0px;
+    }
+}
